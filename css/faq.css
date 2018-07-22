@@ -1,0 +1,92 @@
+@font-face {
+  font-family: blendaScript;
+  src: url(../fonts/BlendaScript.otf); }
+
+@font-face {
+  font-family: moonRegular;
+  src: url(../fonts/Moon2.0-Regular.otf); }
+
+@font-face {
+  font-family: moonBold;
+  src: url(../fonts/Moon2.0-Bold.otf); }
+
+p {
+  font-family: corbel; }
+
+h4 {
+  font-family: moonRegular; }
+
+.muku-btn--main {
+  padding: 0.5rem;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.144);
+  color: #FBFBFB;
+  background-color: #BC3A3A;
+  display: block; }
+  .muku-btn--main:hover {
+    color: #FBFBFB; }
+
+.row {
+  margin-right: 0; }
+
+.muku-logo {
+  height: auto;
+  width: 15rem; }
+
+body {
+  background-color: #FBFBFB; }
+
+h2 {
+  font-family: blendaScript;
+  color: #BC3A3A; }
+
+.navbar-nav a {
+  color: #BC3A3A;
+  font-family: corbel;
+  font-weight: 600; }
+
+.navbar-nav .nav-link--active {
+  border-bottom: 3px solid #BC3A3A; }
+
+[class^="col-"] {
+  padding-right: 0 !important; }
+
+.footer-section {
+  background-color: #BC3A3A;
+  color: #FBFBFB; }
+  .footer-section a {
+    color: #FBFBFB;
+    font-family: corbel; }
+
+.navbar {
+  background-color: #fff; }
+
+.faq-heading-section {
+  color: #272727;
+  font-family: moonRegular;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 45vh;
+  background-color: #fff; }
+  .faq-heading-section hr {
+    border: 2px solid #272727; }
+  .faq-heading-section p {
+    display: block; }
+
+.faq-questions-section__question-head {
+  border-top: 2px solid #BC3A3A;
+  text-align: right;
+  font-family: moonRegular;
+  color: #BC3A3A; }
+
+.faq-questions-section__question {
+  border-top: 2px solid #272727;
+  font-family: moonRegular; }
+  .faq-questions-section__question--last {
+    border-bottom: 2px solid #272727; }
+
+.faq-questions-section__questions {
+  padding-left: 4rem; }
+
+.footer-section {
+  background-color: #fff;
+  color: #BC3A3A; }

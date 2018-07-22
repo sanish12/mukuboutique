@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- import all of the necessary files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- when the gulp file is run, the scss/style.scss get compiled to style.css -->
+    <link rel="stylesheet" href="css/shop.css">
+    <title>Muku Boutique</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="img/muku_logo.png" height="150" width="150" alt="Muku Logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contact-open">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link--active" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navigation -->
+    <div class="shop-heading-section text-center">
+
+        <h4>
+            All Products
+        </h4>
+        <p>Home/ All Products</p>
+    </div>
+
+    <!-- start of shop section -->
+    <div class="shop-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 pr-0">
+                    <div class="shop-section-aside">
+                        <div class="row">
+                            <div class="col-md-12 pr-0">
+                                <div class="shop-section-aside__dress-type">
+                                    <h4>Dress Type</h4>
+                                    <div class="shop-section-aside__dress-type--options pl-2">
+                                        <p>
+                                            <a href="#">Lehanga</a>
+                                        </p>
+                                        <p>
+                                            <a href="#">Sari</a>
+                                        </p>
+                                        <p>
+                                            <a href="#">Gown</a>
+                                        </p>
+                                        <p>
+                                            <a href="#">Dhaka</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="shop-section-aside__dress-type">
+                                    <h4>Filter By</h4>
+                                    <div class="shop-section-aside__filter--price pl-2">
+                                        <p>Price</p>
+                                    </div>
+                                    <div class="shop-section-aside__filter--colors pl-2">
+                                        <p>Colors</p>
+                                    </div>
+                                    <div class="shop-section-aside__filter--size pl-2">
+                                        <p>Size</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 pl-0">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <hr style="border: 1px solid black;">
+                            <div class="sort-products float-right">
+                                <label for="sort">Sort By:</label>
+                                <select name="sort" id="sortProducts">
+                                    <option value="popularity">Sort by popularity</option>
+                                    <option value="popularity">Sort by popularity</option>
+                                    <option value="popularity">Sort by popularity</option>
+                                </select>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr style="border: 1px solid black;">
+                        </div>
+                    </div>
+                    <div class="products-showcase">
+                        <div class="row py-3">
+                            <div class="col-md-4 pb-2">
+                                <img src="img/IMG_8909.jpg" class="img-fluid" alt="">
+
+                                <h4 class="text-center">
+                                    <a href="single_product.html">Product Name</a>
+                                </h4>
+                                <a href="#" class="muku-btn--main text-center mx-4">Details</a>
+
+                            </div>
+                            <div class="col-md-4 pb-2">
+                                <img src="img/IMG_9583.jpg" class="img-fluid" alt="">
+                                <h4 class="text-center">
+                                    <a href="">Product Name</a>
+                                </h4>
+                                <a href="#" class="muku-btn--main text-center mx-4">Details</a>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/IMG_7631.jpg" class="img-fluid" alt="">
+                                <h4 class="text-center">
+                                    <a href="">Product Name</a>
+                                </h4>
+                                <a href="#" class="muku-btn--main text-center mx-4">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-showcase">
+                        <div class="row py-3">
+                            <div class="col-md-4 pb-2">
+                                <img src="img/IMG_8909.jpg" class="img-fluid" alt="">
+
+                                <h4 class="text-center">
+                                    <a href="">Product Name</a>
+                                </h4>
+                                <a href="#" class="muku-btn--main text-center mx-4">Details</a>
+
+                            </div>
+                            <div class="col-md-4 pb-2">
+                                <img src="img/IMG_9583.jpg" class="img-fluid" alt="">
+                                <h4 class="text-center">
+                                    <a href="">Product Name</a>
+                                </h4>
+                                <a href="#" class="muku-btn--main text-center mx-4">Details</a>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/IMG_7631.jpg" class="img-fluid" alt="">
+                                <h4 class="text-center">
+                                    <a href="">Product Name</a>
+                                </h4>
+                                <a href="#" class="muku-btn--main text-center mx-4">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of shop section -->
+
+    <!-- footer section -->
+    <footer class='footer-section py-3'>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/muku_logo.png" width="150" alt="">
+                            <p>muku@gmail.com</p>
+                            <p>Kupondol, Kathmandu</p>
+                            <p>+5523070</p>
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <a href="#" class="nav-link nav-item">CONTACT</a>
+                            <a href="#" class="nav-link nav-item">ABOUT</a>
+                            <a href="#" class="nav-link nav-item">archives</a>
+                            <a href="#" class="nav-link nav-item">newsletter</a>
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <h4>Social</h4>
+                            <div class='pt-2'>
+                                <i class="fa fa-facebook fa-2x"></i>
+                                <i class="fa fa-instagram fa-2x pl-2"></i>
+                                <i class="fa fa-pinterest fa-2x pl-2"></i>
+                                <i class="fa fa-twitter fa-2x pl-2"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+    </footer>
+    <div class="contact-overlay" id="contactForm">
+        <div class="offset-md-3 col-md-6">
+            <div class="row">
+                <div class="col-md-7 pr-0">
+                    <div class="contact-form">
+                        <h4>Send Us a
+                            <br>Message </h4>
+                        <form action="#">
+                            <input type="text" name="email" placeholder="Enter email address">
+                            <input type="text" name="subject" placeholder="Enter Subject">
+                            <textarea name="message" id="" cols="40" rows="4" placeholder="Enter your message here"></textarea>
+                            <input type="submit" name='submit' value="SEND" class='contact-btn'>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 pl-0">
+                    <div class="contact-details">
+                        <i class="fa fa-times float-right" id="contact-close-modal"></i>
+                        <h4>Other Ways To
+                            <br> Contact Us</h4>
+                        <p class='pl-2'>Our store is located in the heart of the city at Kupondol, lalitpur</p>
+                        <div class="contact-details__social-links mt-4 pt-4 pl-3">
+                            <div class="mb-3">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                                <span class='pl-3'>Kupondol, Lalitpur</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fa fa-phone fa-2x"></i>
+                                <span class='pl-3'>01-551232</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="fa fa-envelope fa-2x"></i>
+                                <span class='pl-3'>muku@email.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

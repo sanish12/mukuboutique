@@ -1,0 +1,180 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/fonts';
+// utilities
+@import 'utilities/button';
+@import 'utilities/general';
+@import 'utilities/footer';
+
+nav.navbar{
+    
+}
+
+// end of navigation styling
+.landing-elements {
+    @media screen and (max-width: 368px){
+        padding-top: 0!important;
+    }
+    #logoAndBrand{
+        @media screen and (max-width: 368px){
+            display: none;
+        }
+    }
+    .muku-logo-container {
+        content: "s ";
+        height: 100%;
+        background-color: $primary_color;
+        -webkit-clip-path: polygon(0% 0%, 75% 0%, 54% 53%, 75% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 75% 0%, 54% 53%, 75% 100%, 0% 100%);
+    }
+    &__image {
+        height: 80vh;
+        @include box-shadow;
+    }
+    &__image--mobile{
+        height: 55vh;
+    }
+    &__introductory-text {
+        font-family: corbel;
+        border-top: 3px solid $primary_color;
+        @media screen and (max-width: 368px) {
+            padding-left: 2.5rem;
+            border-top: none;
+        }
+    }
+    #main-landing-shop-btn {
+        @media screen and (max-width: 368px){
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// end of landing section styling
+.collection-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &__products {
+        position: relative;
+        padding-right: 0;
+        #arrow-before 
+        {
+            &::before {
+                font-family: FontAwesome;
+                content: "\f177";
+                display: inline;
+                font-size: 2rem;
+                position: absolute;
+                top: 40%;
+                left: 0;
+            }
+            &::after {
+                font-family: FontAwesome;
+                content: "\f178";
+                display: inline;
+                font-size: 2rem;
+                position: absolute;
+                top: 40%;
+                right: 0;
+            }
+        }
+    }
+    &__brand-ambassadors {
+        &--left {
+            position: relative;
+            padding: 3.5rem;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 2.5rem;
+                content: "";
+                display: block;
+                height: 3rem;
+                width: 7rem;
+                background-color: $primary_color;
+            }
+        }
+        &-text {
+            width: 80%;
+            margin-left: 3rem;
+            padding-top: 0.5rem;
+            border-top: 3px solid $primary_color;
+        }
+        #ambassador-right {
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 6.5rem;
+                content: "";
+                display: block;
+                height: 3rem;
+                width: 7rem;
+                background-color: $primary_color;
+            }
+        }
+        &--right {
+            position: relative;
+            margin-top: 4rem;
+            padding: 3.5rem;
+        }
+    }
+}
+
+.collection-showcase {
+    @include box-shadow;
+    &__left {
+        height: 25rem;
+        width: 20rem;
+    }
+    &__center {
+        margin-top: -2.5rem;
+        height: 30rem;
+        width: 20rem;
+    }
+    &__right {
+        height: 25rem;
+        width: 20rem;
+    }
+}
+
+// end of collection section styling
+// start of about section styling
+.about-section {
+    position: relative;
+    img {
+        position: absolute;
+        top: 2rem;
+        left: 10%;
+        width: 75%;
+    }
+    &__founder-image-container {
+        content: " ";
+        left: 0;
+        background: linear-gradient($primary_color 0%, $primary_color 70%, $secondary_color 70%, $secondary_color 100%);
+        width: 60%;
+        height: 40rem;
+        @media screen and (max-width: 368px){
+            height: 20rem;
+        }
+    }
+    h3 {
+        color: $primary_color;
+        font-family: blendaScript;
+        border-bottom: 2px solid $primary_color;
+        display: inline;
+    }
+    .about-brand-text {
+        margin-top: 25%;
+        @media screen and (max-width: 568px){
+            margin-top: 5%;
+            padding-left: 0.6rem;
+        }
+    }
+}
+
+// store section styling
+.store-section {
+    i {
+        color: $primary_color;
+    }
+}

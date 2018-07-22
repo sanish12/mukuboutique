@@ -1,0 +1,13 @@
+.muku-btn{
+    &--main{
+        padding: 0.5rem;
+        @include box-shadow;
+        color: $secondary_color;
+        background-color: $primary_color;
+        display: block;
+        &:hover{
+            color: $secondary_color;
+        
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/fonts';
+// utilities
+@import 'utilities/button';
+@import 'utilities/general';
+@import 'utilities/footer';
+@import 'utilities/contact';
+.page-breadcrumb {
+    padding: 0.5rem;
+    background-color: #fff;
+    h4 {
+        padding: 0.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+.product-section {
+    &__best-sellers{
+        h4{
+            font-size: 1.25rem;
+        }
+    }
+    .details-link {
+        font-family: corbel;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $primary_color;
+    }
+    a:hover {
+        color: $primary_color;
+    }
+    h5{
+        font-family: moonRegular;
+           
+    }
+    select{
+        padding: 0.25rem;
+        font-size: 1rem;
+        @include box-shadow;
+    }
+    p{
+        font-size: 1.15rem;
+    }
+}
+.recommended-products{
+    h4 a{
+        color: $text_color_black;
+    }
+}

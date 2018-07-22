@@ -1,0 +1,78 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/fonts';
+// utilities
+@import 'utilities/button';
+@import 'utilities/general';
+@import 'utilities/footer';
+@import 'utilities/contact';
+
+.about-section {
+    position: relative;
+    img {
+        position: absolute;
+        top: 2rem;
+        left: 10%;
+        width: 75%;
+    }
+    &__founder-image-container {
+        content: " ";
+        left: 0;
+        background: linear-gradient($primary_color 0%, $primary_color 70%, $secondary_color 70%, $secondary_color 100%);
+        width: 60%;
+        height: 40rem;
+        @media screen and (max-width: 368px){
+            height: 20rem;
+        }
+    }
+    h3 {
+        color: $primary_color;
+        font-family: blendaScript;
+        border-bottom: 2px solid $primary_color;
+        display: inline;
+    }
+    .about-brand-text {
+        margin-top: 25%;
+        @media screen and (max-width: 568px){
+            margin-top: 5%;
+            padding-left: 0.6rem;
+        }
+    }
+}
+
+// store section styling
+.store-section{
+    i{
+        color: $primary_color;
+    }
+}
+// features section
+.features-section{
+    h2{
+        border-bottom: 3px solid $primary_color;
+        width: 25%;
+        padding-bottom: 0.5rem;
+        @media screen and (max-width: 568px){
+            width: 75%;
+        }
+    }
+    &__features-single{
+        height: 20rem;
+        width: 80%;
+        &-text{
+            margin-top: 15%;
+            h4{
+                color: $primary_color;
+                font-family: moonRegular;
+                width: 80%;
+                padding-bottom: 0.5rem;
+                border-bottom: 3px solid $primary_color;
+            }
+            p{
+                margin-left: 2.5rem;
+                padding-top: 1.5rem;
+                width: 70%;
+            }
+        }
+    }
+}

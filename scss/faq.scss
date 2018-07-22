@@ -1,0 +1,49 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/fonts';
+// utilities
+@import 'utilities/button';
+@import 'utilities/general';
+@import 'utilities/footer';
+
+.navbar{
+    background-color: #fff;
+}
+
+.faq-heading-section{
+    color: $text_color_black;
+    font-family: moonRegular;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 45vh;
+    background-color: #fff;
+    hr{
+        border: 2px solid $text_color_black;
+    }
+   p{
+       display: block; 
+   }
+   
+}
+.faq-questions-section{
+    &__question-head{
+        border-top: 2px solid $primary_color;
+        text-align: right;
+        font-family: moonRegular;
+        color: $primary_color;
+    }
+    &__question{
+        border-top: 2px solid $text_color_black;
+        font-family: moonRegular;
+        &--last{
+            border-bottom: 2px solid $text_color_black;
+        }
+    }
+}
+.faq-questions-section__questions{
+    padding-left: 4rem;
+}
+.footer-section{
+    background-color: #fff;
+    color: $primary_color;
+}

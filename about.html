@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- import all of the necessary files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- when the gulp file is run, the scss/style.scss get compiled to style.css -->
+    <link rel="stylesheet" href="css/about.css">
+    <title>Muku Boutique</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="img/muku_logo.png" height="150" width="150" alt="Muku Logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contact-open">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link--active" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navigation -->
+
+    <!-- start of about muku section -->
+    <div class="about-section">
+        <!-- <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class='pb-2'>About Muku</h2>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-7">
+                <div class="about-section__founder-image-container px-5"></div>
+                <img src="img/founder.jpg" class='img-fluid' alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="about-brand-text">
+                    <h3>
+                        Behind the Brand
+                    </h3>
+                    <p class='pt-3 pl-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos illum qui recusandae accusamus
+                        possimus veniam reiciendis obcaecati ducimus praesentium repudiandae?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of about section -->
+
+    <!-- start of features section -->
+    <div class="features-section py-4">
+        <div class="features-section__heading pl-4">
+            <h2>The Promise of Muku</h2>
+        </div>
+        <div class="features-section__features py-5">
+            <div class="container">
+
+                <div class="row py-4">
+
+                    <div class="col-md-6" style="content: '';">
+                        <div class="features-section__features-single" style="background: url(img/dhaka_feature.jpg) no-repeat center; background-size:cover;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="features-section__features-single-text">
+                            <h4>Hand-woven Dhaka Products</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores odio, aut, non fugit
+                                explicabo nisi iste quos ipsam mollitia facere laborum quasi eius at!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of feature 1 -->
+                <div class="row py-4">
+                        <div class="col-md-6 d-block d-sm-block d-md-none d-lg-none d-xl-none" style="content: '';">
+                                <div class="features-section__features-single" style="background: url(img/custom_design.jpg) no-repeat center; background-size:cover;">
+                                </div>
+                        </div>
+                    <div class="col-md-6">
+                        <div class="features-section__features-single-text">
+                            <h4>Custom Design Services</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores odio, aut, non fugit
+                                explicabo nisi iste quos ipsam mollitia facere laborum quasi eius at!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-sm-none d-md-block d-xl-block d-lg-block" style="content: '';">
+                        <div class="features-section__features-single" style="background: url(img/custom_design.jpg) no-repeat center; background-size:cover;">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of feature 2 -->
+                <div class="row py-4">
+
+                    <div class="col-md-6" style="content: '';">
+                        <div class="features-section__features-single" style="background: url(img/dhaka_feature.jpg) no-repeat center; background-size:cover;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="features-section__features-single-text">
+                            <h4>Ready Made Formal and Casual Ware</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores odio, aut, non fugit
+                                explicabo nisi iste quos ipsam mollitia facere laborum quasi eius at!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of feature 3 -->
+            </div>
+        </div>
+    </div>
+    <!-- end of features section -->
+
+    <!-- start of store section -->
+    <div class="store-section py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class='text-center pb-2'>Our Store</h2>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-9">
+                    <img src="img/map.png" class='img-fluid' alt="">
+                </div>
+                <div class="col-md-3">
+                    <div class="row mt-5">
+                        <div class="col-md-12 py-2">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="fa fa-map-marker fa-3x"></i>
+                                </div>
+                                <div class="col-md-9 py-2 px-3">Kupondol, Lalitpur</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 py-2">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="fa fa-3x fa-phone"></i>
+                                </div>
+                                <div class="col-md-9 py-2 px-3">
+                                    <span>+01-512322</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 py-2">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                </div>
+                                <div class="col-md-9 py-2 px-3">10:30 - 6:30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of our store section -->
+
+    <!-- footer section -->
+    <footer class='footer-section py-3'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row text-right">
+                        <div class="col-md-12">
+                            <img src="img/muku_logo_white.png" alt="muku logo here" class='muku-logo img-fluid' srcset="">
+                        </div>
+                        <div class="col-md-12">
+                            <p>Kupondol, Kathmandu</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>mukuboutique@email.com</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>+01-551232</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-right mt-5 px-3">
+                    <div class="row">
+                        <div class="col-md-12 py-2">HOME</div>
+                        <div class="col-md-12 py-2">ABOUT</div>
+                        <div class="col-md-12 py-2">FAQ</div>
+                        <div class="col-md-12 py-2">STORE</div>
+                        <div class="col-md-12 py-2">GALLERY</div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center mt-5 px-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Social Links</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row py-3">
+                                <div class="offset-md-3 col-md-2">
+                                    <i class="fa fa-facebook fa-2x"></i>
+                                </div>
+                                <div class="col-md-2">
+                                    <i class="fa fa-instagram fa-2x"></i>
+                                </div>
+                                <div class="col-md-2">
+                                    <i class="fa fa-twitter fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+<div class="contact-overlay" id="contactForm" >
+    <div class="offset-md-3 col-md-6">
+        <div class="row">
+            <div class="col-md-7 pr-0">
+                <div class="contact-form">
+                    <h4>Send Us a <br>Message </h4>
+                    <form action="#">
+                        <input type="text" name="email" placeholder="Enter email address">
+                        <input type="text" name="subject" placeholder="Enter Subject">
+                        <textarea name="message" id="" cols="35" rows="4" placeholder="Enter your message here"></textarea>
+                        <input type="submit" name='submit' value="SEND" class='contact-btn'>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 pl-0">
+                <div class="contact-details">
+                        <i class="fa fa-times float-right" id="contact-close-modal"></i>
+                    <h4>Other Ways To <br> Contact Us</h4>
+                    <p class='pl-2'>Our store is located in the heart of the city at Kupondol, lalitpur</p>
+                    <div class="contact-details__social-links mt-4 pt-4 pl-3">
+                        <div class="mb-3"><i class="fa fa-map-marker fa-2x"></i><span class='pl-3'>Kupondol, Lalitpur</span></div>
+                        <div class="mb-3"><i class="fa fa-phone fa-2x"></i><span class='pl-3'>01-551232</span></div>
+                        <div class="mb-3"><i class="fa fa-envelope fa-2x"></i><span class='pl-3'>muku@email.com</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

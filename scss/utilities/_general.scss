@@ -1,0 +1,30 @@
+.row {
+    margin-right: 0;
+    
+}
+.muku-logo {
+    height: auto;
+    width: 15rem;
+}
+body {
+    background-color: $secondary_color;
+}
+
+h2 {
+    font-family: blendaScript;
+    color: $primary_color;
+}
+
+.navbar-nav {
+    a {
+        color: $primary_color;
+        font-family: corbel;
+        font-weight: 600;
+    }
+    .nav-link--active {
+        border-bottom: 3px solid $primary_color;
+    }
+}
+[class^="col-"]{
+    padding-right: 0!important;
+}
