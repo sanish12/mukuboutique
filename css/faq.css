@@ -94,5 +94,12 @@ h2 {
 .right-faqs{
   margin-left:10%;
   font-family: moonRegular;
-  color: #BC3A3A; }
+  color:#000 }
+.bg_faq_closed{
+  background-position-x: 100%;
+}
+.bg_faq_opened{
+  background-position-x: 100%;
+}
+
 
