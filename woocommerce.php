@@ -28,26 +28,6 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="contact-open">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link--active" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                </li> -->
                 <?php wp_list_pages(array(
                     'title_li' => ''
                     )); ?>
@@ -72,37 +52,12 @@
         <div class="col-md-3 pr-0">
             <div class="shop-section-aside">
                 <div class="row">
-                    <div class="col-md-12 pr-0">
-                        <div class="shop-section-aside__dress-type">
-                            <h4>Dress Type</h4>
-                            <div class="shop-section-aside__dress-type--options pl-2">
-                                <p>
-                                    <a href="#">Lehanga</a>
-                                </p>
-                                <p>
-                                    <a href="#">Sari</a>
-                                </p>
-                                <p>
-                                    <a href="#">Gown</a>
-                                </p>
-                                <p>
-                                    <a href="#">Dhaka</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="shop-section-aside__dress-type">
-                            <h4>Filter By</h4>
-
-                            <div class="shop-section-aside__filter--price pl-2">
-                                <p>Price</p>
-                            </div>
-                            <div class="shop-section-aside__filter--colors pl-2">
-                                <p>Colors</p>
-                            </div>
-                            <div class="shop-section-aside__filter--size pl-2">
-                                <p>Size</p>
+                    <div class="col-md-12 pl-0">
+                        <div class="shop-section-aside">
+                            <div class="woocommerce px-3">
+                            <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+                                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                            <?php endif; ?>
                             </div>
                         </div>
                     </div>
@@ -111,58 +66,29 @@
         </div>
         <div class="col-md-9 pl-0">
             <div class="container">
+            <?php if(is_product()){
+                        //dont show sort by bar
+                    } 
+                    else{
+                    ?>
+                    
             <div class="row">
                 <div class="col">
                     <hr style="border: 1px solid black;">
                     <div class="sort-products float-right">
-                        <label for="sort">Sort By:</label>
                         <?php woocommerce_catalog_ordering(); ?>
                     </div>
                     <div class="clearfix"></div>
                     <hr style="border: 1px solid black;">
                 </div>
             </div>
+                    <?php  }//show filter by in products section only  ?>
             <div class="products-showcase">
-                <div class="row py-3">
-                    <!-- <div class="col-md-4 pb-2">
-                        <img src="img/IMG_8909.jpg" class="img-fluid" alt="">
-
-                        <h4 class="text-center">
-                            <a href="single_product.html">Product Name</a>
-                        </h4>
-                        <a href="#" class="muku-btn--main text-center mx-4">Details</a>
-
+                <!-- <div class="row py-3"> -->
+                <div class="woocommerce">    
+                    <?php woocommerce_content(); ?>
                     </div>
-                    <div class="col-md-4 pb-2">
-                        <img src="img/IMG_9583.jpg" class="img-fluid" alt="">
-                        <h4 class="text-center">
-                            <a href="">Product Name</a>
-                        </h4>
-                        <a href="#" class="muku-btn--main text-center mx-4">Details</a>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/IMG_7631.jpg" class="img-fluid" alt="">
-                        <h4 class="text-center">
-                            <a href="">Product Name</a>
-                        </h4>
-                        <a href="#" class="muku-btn--main text-center mx-4">Details</a>
-                    </div> -->
-                    <?php
-		$args = array(
-			'post_type' => 'product',
-			'posts_per_page' => 12
-			);
-		$loop = new WP_Query( $args );
-		if ( $loop->have_posts() ) {
-            while ( $loop->have_posts() ) : $loop->the_post();
-				wc_get_template_part( 'content', 'product' );
-			endwhile;
-		} else {
-			echo __( 'No products found' );
-		}
-		wp_reset_postdata();
-	?>
-                </div>
+                <!-- </div> -->
             </div>
             
         </div>

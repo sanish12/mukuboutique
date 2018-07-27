@@ -1,3 +1,6 @@
+<?php
+/* Template Name: checkout */
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,24 +12,19 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <!-- when the gulp file is run, the scss/style.scss get compiled to style.css -->
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/checkout.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/shop.css">
     <title><?php bloginfo('name'); ?></title>
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
 </head>
+
 <body>
+ 
     <nav class="navbar navbar-expand-lg">
-    <?php if(is_home()){ ?>
-        <a class="navbar-brand" href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/muku_logo.png" height="150" width="150" alt="Muku Logo" class="img-fluid d-block d-sm-block d-md-none d-lg-none d-xl-none">
-        </a>
-    <?php } 
-    else{
-    ?>
         <a class="navbar-brand" href="#">
             <img src="<?php echo get_template_directory_uri(); ?>/img/muku_logo.png" height="150" width="150" alt="Muku Logo" class="img-fluid">
         </a>
-    <?php } ?>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
             aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars fa-2x"></i>
@@ -34,26 +32,6 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="contact-open">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link--active" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                </li> -->
                 <?php wp_list_pages(array(
                     'title_li' => ''
                     )); ?>
@@ -61,3 +39,19 @@
         </div>
     </nav>
     <!-- end of navigation -->
+<div class="shop-heading-section text-center">
+<h4>
+ Check-Out
+</h4>
+<p>Home/ Checkout</p>
+</div>
+<div class="container py-4 mt-2">
+<div class="row">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();         
+        the_content();
+      endwhile; else: ?>
+        <p>Sorry, no posts matched your criteria.</p>
+<?php endif; ?>
+</div>
+</div>
+<?php get_footer(); ?>

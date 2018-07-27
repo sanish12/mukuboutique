@@ -74,9 +74,11 @@ h2 {
 }
 
 .footer-section {
-  border-top: 1px solid #777777;
+  border-top: 2px solid #BC3A3A;
   background-color: #FBFBFB;
   color: #BC3A3A;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer-section a {

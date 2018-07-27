@@ -213,16 +213,17 @@ h2 {
   text-align: center;
   color: #272727;
 }
-.woocommerce-loop-product__title:hover{
-    text-decoration-line: underline;
-    text-decoration-color:  #BC3A3A;
+
+.woocommerce-loop-product__title:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #BC3A3A;
 }
 
-span.woocommerce-Price-amount{
+span.woocommerce-Price-amount {
   display: none;
 }
 
-a.add_to_cart_button{
+a.add_to_cart_button {
   padding: 0.5rem;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.144);
   color: #FBFBFB;
@@ -230,9 +231,49 @@ a.add_to_cart_button{
   display: block;
   text-align: center;
   margin-left: 3rem;
-  margin-right: 3rem; 
+  margin-right: 3rem;
 }
-img.attachment-woocommerce_thumbnail{
+
+img.attachment-woocommerce_thumbnail {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+}
+
+h1.widget-title {
+  color: #272727;
+  font-size: 1.4rem;
+  font-family: moonRegular;
+  padding-bottom: 0.5rem;
+  width: 90%;
+  border-bottom: 2px solid #BC3a3a;
+  margin-bottom: 1rem;
+}
+
+form.woocommerce-product-search button {
+  padding: 0.5rem;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.144);
+  color: #FBFBFB;
+  background-color: #BC3A3A;
+  border: none;
+}
+
+ul.product-categories {
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+ul.product-categories li {
+  list-style-type: none;
+  font-family: moonRegular;
+  padding-bottom: 0.5rem;
+}
+
+aside.widget_product_search {
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+form.woocommerce-product-search {
+  padding-top: 0.5rem;
+  padding-right: 0.1rem;
 }
