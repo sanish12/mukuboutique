@@ -45,6 +45,7 @@
 </h4>
 <p>Home/ Checkout</p>
 </div>
+<div class="checkout-muku" style="background-color: #fff;">
 <div class="container py-4 mt-2">
 <div class="row">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();         
@@ -52,6 +53,7 @@
       endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>
+</div>
 </div>
 </div>
 <?php get_footer(); ?>

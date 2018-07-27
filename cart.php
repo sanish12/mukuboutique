@@ -2,7 +2,7 @@
 /* Template Name: cart */
 ?>
 <?php get_header(); ?>
-<div class="woocommerce py-4 mt-2">
+<div class="woocommerce py-4 mt-2" style="background-color: #fff">
         
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();         
         the_content();
