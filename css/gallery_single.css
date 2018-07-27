@@ -121,3 +121,7 @@ h2 {
   background-color: #BC3A3A;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 54% 53%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 54% 53%, 75% 100%, 0% 100%); }
+
+  .page-main {
+    margin-bottom: 5%;
+  }

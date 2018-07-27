@@ -76,7 +76,8 @@ h2 {
   border-top: 2px solid #BC3A3A;
   text-align: right;
   font-family: moonRegular;
-  color: #BC3A3A; }
+  color: #BC3A3A; 
+}
 
 .faq-questions-section__question {
   border-top: 2px solid #272727;
@@ -90,3 +91,8 @@ h2 {
 .footer-section {
   background-color: #fff;
   color: #BC3A3A; }
+.right-faqs{
+  margin-left:10%;
+  font-family: moonRegular;
+  color: #BC3A3A; }
+

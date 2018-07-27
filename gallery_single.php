@@ -1,3 +1,6 @@
+<?php
+/* Template Name: gallery_single */
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -57,9 +60,7 @@
             </div>
         </nav>
         <!-- end of navigation -->
-
-          <!-- end of navigation -->
-          <div class="gallery-landing-section">
+        <div class="gallery-landing-section">
             <h4 class="text-center">Event Name</h4>
             <div class="row">
                 <div class="col-md-4 offset-md-4">
@@ -78,16 +79,45 @@
                     </div>
                 </div>
             </div>
-        <div class="page-main">
-        <?php if( have_posts() ) : while( have_posts() ) : the_post();  ?>
-        <?php the_content(); 
-            endwhile; else:
-        ?>
-        <p>Sorry no posts</p>
-
-        <?php endif; ?>
+            <div class="row py-4">
+                <div class="col-md-5 offset-md-2 pt-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_7619.jpg" height="750" class="d-none d-sm-none d-md-block d-lg-block d-xl-block" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_7619.jpg" class="img-fluid d-block d-sm-block d-md-none d-lg-none d-xl-none" alt="">
+                </div>
+                <div class="col-md-3 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_2396.jpg" height="200" alt="">
+                        </div>
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_2343.jpg" height="200" alt="">
+                        </div>
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_0123.jpg" alt="" height="200">
+                        </div>
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_8860.jpg" height="200" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_2396.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_2343.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>//IMG_0123.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-12">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_8860.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
   <!-- end of gallery_single sections -->
  <?php
      get_footer();
